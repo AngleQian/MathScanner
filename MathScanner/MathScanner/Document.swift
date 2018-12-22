@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import Cocoa
+
+class Document {
+    var images: [NSImage]!
+    
+    init() {
+        
+    }
+    
+    func addImage(fileURL: URL) {
+        if let image = NSImage(contentsOf: fileURL) {
+            images.append(image)
+        }
+    }
+    
+    
+    
+    
+    
+}

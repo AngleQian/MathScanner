@@ -1,5 +1,5 @@
 //
-//  importView.swift
+//  DragView.swift
 //  MathScanner
 //
 //  Created by Angle Qian on 2018/12/20.
@@ -8,51 +8,74 @@
 
 import Cocoa
 
-class DropView: NSView {
+protocol DragViewDelegate {
+    func dragView(didDragFileWith URL: URL)
+}
 
-    private var fileTypeIsOk = false
-    private var acceptedFileExtensions = ["png"]
+class DragView: NSView {
+    
+    var delegate: DragViewDelegate?
+    
+    private var acceptedFileExtensions = ["png", "jpeg", "jpg"]
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.wantsLayer = true
         self.layer?.backgroundColor = NSColor.gray.cgColor
         
-        registeredDraggedTypes([NSPasteboard.PasteboardType.URL, NSPasteboard.PasteboardType.fileURL])
+        registerForDraggedTypes([NSPasteboard.PasteboardType.URL, NSPasteboard.PasteboardType.fileURL])
+    }
+    
+    override func draw(_ dirtyRect: NSRect){
+        super.draw(dirtyRect)
     }
     
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
-        fileTypeIsOk = checkExtension(drag: sender)
-        return []
+        if checkExtension(sender) == true {
+            self.layer?.backgroundColor = NSColor.blue.cgColor
+            return .copy
+        } else {
+            return NSDragOperation()
+        }
     }
     
-    override func draggingUpdated(_ sender: NSDraggingInfo) -> NSDragOperation {
-        return fileTypeIsOk ? .copy: []
+    override func draggingExited(_ sender: NSDraggingInfo?){
+        self.layer?.backgroundColor = NSColor.gray.cgColor
+    }
+    
+    override func draggingEnded(_ sender: NSDraggingInfo) {
+        self.layer?.backgroundColor = NSColor.gray.cgColor
     }
     
     override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
-        guard let draggedFileURL = sender.draggedFileURL else {
-            return false
+        guard let pasteboard = sender.draggingPasteboard().propertyList(forType: NSPasteboard.PasteboardType(rawValue: "NSFilenamesPboardType")) as? NSArray,
+            let path = pasteboard[0] as? String else {
+                return false
         }
+        
+        let fileURL = URL(fileURLWithPath: path)
+        delegate?.dragView(didDragFileWith: fileURL)
+        
+        
+        Swift.print("PathURL: \(fileURL.absoluteString)")
         
         return true
     }
     
-    fileprivate func checkExtension(drag: NSDraggingInfo) -> Bool {
-        guard let fileExtension = drag.draggedFileURL?.pathExtension?.lowercased() else {
-            return false
+    fileprivate func checkExtension(_ drag: NSDraggingInfo) -> Bool {
+        guard let board = drag.draggingPasteboard().propertyList(forType: NSPasteboard.PasteboardType(rawValue: "NSFilenamesPboardType")) as? NSArray,
+            let path = board[0] as? String else {
+                return false
         }
         
-        return acceptedFileExtensions.contains(fileExtension)
+        let suffix = URL(fileURLWithPath: path).pathExtension
+        for ext in self.acceptedFileExtensions {
+            if ext.lowercased() == suffix {
+                return true
+            }
+        }
+        
+        return false
     }
     
-}
-
-extension NSDraggingInfo{
-    var draggedFileURL: NSURL? {
-        let filenames = draggingPasteboard().propertyList(forType: NSPasteboard.PasteboardType(kUTTypeURL as String)) as? [String]
-        let path = filenames?.first
-        
-        return path.map(NSURL.init)
-    }
 }

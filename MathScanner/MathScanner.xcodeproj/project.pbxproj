@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BEFF22F7711843CC6E8C32F /* Pods_MathScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35E041B915A07B51668AB0F /* Pods_MathScanner.framework */; };
+		25AE1850508A232CE50FB301 /* Pods_MathScannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D5758D67A714A1AA17C229 /* Pods_MathScannerTests.framework */; };
+		53A23B0421CBAA4F00D371A7 /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A23B0321CBAA4F00D371A7 /* DragView.swift */; };
+		53A23B0621CBE13700D371A7 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A23B0521CBE13700D371A7 /* Document.swift */; };
+		53A23B0821CD15DF00D371A7 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A23B0721CD15DF00D371A7 /* Converter.swift */; };
 		53DA0CD421C6885C004CE8C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DA0CD321C6885C004CE8C0 /* AppDelegate.swift */; };
 		53DA0CD621C6885C004CE8C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DA0CD521C6885C004CE8C0 /* ViewController.swift */; };
 		53DA0CD821C6885C004CE8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53DA0CD721C6885C004CE8C0 /* Assets.xcassets */; };
 		53DA0CDB21C6885C004CE8C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DA0CD921C6885C004CE8C0 /* Main.storyboard */; };
 		53DA0CE721C6885D004CE8C0 /* MathScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DA0CE621C6885D004CE8C0 /* MathScannerTests.swift */; };
 		53DA0CF221C6885D004CE8C0 /* MathScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DA0CF121C6885D004CE8C0 /* MathScannerUITests.swift */; };
+		75AE58E18A53BD348E10ACB1 /* Pods_MathScannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C55EDDBCD739660B772984 /* Pods_MathScannerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3403DBF70630A2A5C38421A8 /* Pods-MathScannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathScannerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathScannerUITests/Pods-MathScannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F7CE5F3E2D2C763AB742D8D /* Pods-MathScannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathScannerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathScannerUITests/Pods-MathScannerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		53A23B0321CBAA4F00D371A7 /* DragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
+		53A23B0521CBE13700D371A7 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		53A23B0721CD15DF00D371A7 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		53DA0CD021C6885C004CE8C0 /* MathScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DA0CD321C6885C004CE8C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53DA0CD521C6885C004CE8C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +57,13 @@
 		53DA0CED21C6885D004CE8C0 /* MathScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DA0CF121C6885D004CE8C0 /* MathScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathScannerUITests.swift; sourceTree = "<group>"; };
 		53DA0CF321C6885D004CE8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77875C62BEA461BD4437A9AB /* Pods-MathScannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathScannerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathScannerTests/Pods-MathScannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		947F602DC71F834DB997D124 /* Pods-MathScannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathScannerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathScannerTests/Pods-MathScannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		98D5758D67A714A1AA17C229 /* Pods_MathScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathScannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C55EDDBCD739660B772984 /* Pods_MathScannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathScannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35E041B915A07B51668AB0F /* Pods_MathScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C574E9914BFC395DBB4609FD /* Pods-MathScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathScanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathScanner/Pods-MathScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		C83DE65FE3741F99A2054690 /* Pods-MathScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathScanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathScanner/Pods-MathScanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BEFF22F7711843CC6E8C32F /* Pods_MathScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25AE1850508A232CE50FB301 /* Pods_MathScannerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +87,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AE58E18A53BD348E10ACB1 /* Pods_MathScannerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B5680495215C76BA7ECEEC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C574E9914BFC395DBB4609FD /* Pods-MathScanner.debug.xcconfig */,
+				C83DE65FE3741F99A2054690 /* Pods-MathScanner.release.xcconfig */,
+				77875C62BEA461BD4437A9AB /* Pods-MathScannerTests.debug.xcconfig */,
+				947F602DC71F834DB997D124 /* Pods-MathScannerTests.release.xcconfig */,
+				3403DBF70630A2A5C38421A8 /* Pods-MathScannerUITests.debug.xcconfig */,
+				3F7CE5F3E2D2C763AB742D8D /* Pods-MathScannerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		53DA0CC721C6885C004CE8C0 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +114,8 @@
 				53DA0CE521C6885D004CE8C0 /* MathScannerTests */,
 				53DA0CF021C6885D004CE8C0 /* MathScannerUITests */,
 				53DA0CD121C6885C004CE8C0 /* Products */,
+				4B5680495215C76BA7ECEEC0 /* Pods */,
+				BCDED10FCF1BBB0C66223E12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +138,9 @@
 				53DA0CD921C6885C004CE8C0 /* Main.storyboard */,
 				53DA0CDC21C6885C004CE8C0 /* Info.plist */,
 				53DA0CDD21C6885C004CE8C0 /* MathScanner.entitlements */,
+				53A23B0321CBAA4F00D371A7 /* DragView.swift */,
+				53A23B0521CBE13700D371A7 /* Document.swift */,
+				53A23B0721CD15DF00D371A7 /* Converter.swift */,
 			);
 			path = MathScanner;
 			sourceTree = "<group>";
@@ -124,6 +163,16 @@
 			path = MathScannerUITests;
 			sourceTree = "<group>";
 		};
+		BCDED10FCF1BBB0C66223E12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C35E041B915A07B51668AB0F /* Pods_MathScanner.framework */,
+				98D5758D67A714A1AA17C229 /* Pods_MathScannerTests.framework */,
+				A6C55EDDBCD739660B772984 /* Pods_MathScannerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53DA0CF621C6885D004CE8C0 /* Build configuration list for PBXNativeTarget "MathScanner" */;
 			buildPhases = (
+				D8515224912617D6654616B7 /* [CP] Check Pods Manifest.lock */,
 				53DA0CCC21C6885C004CE8C0 /* Sources */,
 				53DA0CCD21C6885C004CE8C0 /* Frameworks */,
 				53DA0CCE21C6885C004CE8C0 /* Resources */,
+				8578063D12AB928EC44649E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53DA0CF921C6885D004CE8C0 /* Build configuration list for PBXNativeTarget "MathScannerTests" */;
 			buildPhases = (
+				1BA970FD9882D735E5DC2D10 /* [CP] Check Pods Manifest.lock */,
 				53DA0CDE21C6885D004CE8C0 /* Sources */,
 				53DA0CDF21C6885D004CE8C0 /* Frameworks */,
 				53DA0CE021C6885D004CE8C0 /* Resources */,
@@ -166,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53DA0CFC21C6885D004CE8C0 /* Build configuration list for PBXNativeTarget "MathScannerUITests" */;
 			buildPhases = (
+				44C364FDBC4EB2ACDEDCB860 /* [CP] Check Pods Manifest.lock */,
 				53DA0CE921C6885D004CE8C0 /* Sources */,
 				53DA0CEA21C6885D004CE8C0 /* Frameworks */,
 				53DA0CEB21C6885D004CE8C0 /* Resources */,
@@ -252,13 +305,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BA970FD9882D735E5DC2D10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathScannerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44C364FDBC4EB2ACDEDCB860 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathScannerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8578063D12AB928EC44649E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MathScanner/Pods-MathScanner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathScanner/Pods-MathScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8515224912617D6654616B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathScanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		53DA0CCC21C6885C004CE8C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A23B0621CBE13700D371A7 /* Document.swift in Sources */,
 				53DA0CD621C6885C004CE8C0 /* ViewController.swift in Sources */,
+				53A23B0421CBAA4F00D371A7 /* DragView.swift in Sources */,
 				53DA0CD421C6885C004CE8C0 /* AppDelegate.swift in Sources */,
+				53A23B0821CD15DF00D371A7 /* Converter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +560,7 @@
 		};
 		53DA0CF721C6885D004CE8C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C574E9914BFC395DBB4609FD /* Pods-MathScanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MathScanner/MathScanner.entitlements;
@@ -420,6 +568,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MathScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = AngleQian.MathScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -428,6 +577,7 @@
 		};
 		53DA0CF821C6885D004CE8C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C83DE65FE3741F99A2054690 /* Pods-MathScanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MathScanner/MathScanner.entitlements;
@@ -435,6 +585,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MathScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = AngleQian.MathScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -443,6 +594,7 @@
 		};
 		53DA0CFA21C6885D004CE8C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77875C62BEA461BD4437A9AB /* Pods-MathScannerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +602,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MathScannerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = AngleQian.MathScannerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -459,6 +612,7 @@
 		};
 		53DA0CFB21C6885D004CE8C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 947F602DC71F834DB997D124 /* Pods-MathScannerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +620,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MathScannerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = AngleQian.MathScannerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -475,12 +630,14 @@
 		};
 		53DA0CFD21C6885D004CE8C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3403DBF70630A2A5C38421A8 /* Pods-MathScannerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MathScannerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = AngleQian.MathScannerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -490,12 +647,14 @@
 		};
 		53DA0CFE21C6885D004CE8C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F7CE5F3E2D2C763AB742D8D /* Pods-MathScannerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MathScannerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = AngleQian.MathScannerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
